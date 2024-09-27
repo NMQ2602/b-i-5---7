@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hello</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            display: grid;
+            grid-template-rows: 100px 50px 1fr 50px;
+            grid-template-columns: 1fr 2fr 1fr;
+            height: 100vh;
+            grid-template-areas:
+                "header header header"
+                "menu menu menu"
+                "left content right"
+                "footer footer footer";
+        }
+        .header {
+            grid-area: header;
+            background-color: pink;
+            display: flex;
+            align-items: left;
+            justify-content: left;
+            color: white;
+        }
+        .menu {
+            grid-area: menu;
+            background-color: blue;
+            display: flex;
+            align-items: left;
+            justify-content: left;
+            color: white;
+        }
+        .left {
+            grid-area: left;
+            background-color: lightgreen;
+            display: flex;
+            align-items: left;
+            justify-content: left;
+            color: white;
+        }
+        .content {
+            grid-area: content;
+            background-color: green;
+            display: flex;
+            align-items: left;
+            justify-content: left;
+            color: white;
+        }
+        .right {
+            grid-area: right;
+            background-color: orange;
+            display: flex;
+            align-items: left;
+            justify-content: left;
+            color: white;
+        }
+        .footer {
+            grid-area: footer;
+            background-color: gray;
+            display: flex;
+            align-items: left;
+            justify-content: left;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="header">Header</div>
+        <div class="menu">Menu</div>
+        <div class="left">Left</div>
+        <div class="content">Content</div>
+        <div class="right">Right</div>
+        <div class="footer">Footer</div>
+    </div>
+
+</body>
+</html>
